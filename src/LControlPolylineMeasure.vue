@@ -1,0 +1,30 @@
+<script>
+import { OptionsMixin, ControlMixin, propsBinder, optionsMerger } from 'vue2-leaflet';
+import LPolylineMeasure from 'leaflet.polylinemeasure';
+
+export default {
+
+  name: 'LControlPolylineMeasure',
+
+  mixins: [ ControlMixin, OptionsMixin ],
+
+  mounted() {
+    const options = optionsMerger({
+      ...this.controlOptions,
+      options: this.options,
+    }, this);
+    console.log('Creating with options', options);
+    this.mapObject = new LPolylineMeasure(options);
+    console.log('Created map object:', this.mapObject);
+    console.log('Have option props:', this.$options.props);
+    propsBinder(this, this.mapObject, this.$options.props);
+    this.mapObject.addTo(this.$parent.mapObject);
+    this.$emit('ready', this.mapObject);
+  },
+
+  render () {
+    return null;
+  },
+
+};
+</script>
