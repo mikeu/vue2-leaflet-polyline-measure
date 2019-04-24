@@ -13,10 +13,7 @@ export default {
       ...this.controlOptions,
       options: this.options,
     }, this);
-    console.log('Creating with options', options);
     this.mapObject = new LPolylineMeasure(options);
-    console.log('Created map object:', this.mapObject);
-    console.log('Have option props:', this.$options.props);
     propsBinder(this, this.mapObject, this.$options.props);
     this.mapObject.addTo(this.$parent.mapObject);
     this.$emit('ready', this.mapObject);
