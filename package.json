@@ -1,5 +1,5 @@
 {
-  "name": "vue2-leaflet-polylinemeasure",
+  "name": "vue2-leaflet-polyline-measure",
   "version": "0.0.1",
   "description": "Leaflet.PolylineMeasure control plugin extension for Vue2Leaflet package",
   "main": "dist/LControlPolylineMeasure.js",
@@ -21,9 +21,9 @@
   "author": "Michael Underwood",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mikeu/vue2-leaflet-polylinemeasure/issues"
+    "url": "https://github.com/mikeu/vue2-leaflet-polyline-measure/issues"
   },
-  "homepage": "https://github.com/mikeu/vue2-leaflet-polylinemeasure#readme",
+  "homepage": "https://github.com/mikeu/vue2-leaflet-polyline-measure#readme",
   "dependencies": {
     "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure"
   },
