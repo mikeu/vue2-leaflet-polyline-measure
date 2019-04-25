@@ -52,11 +52,12 @@ export default {
 Add the `l-control-poyline-measure` component inside an `LMap`, optionally providing it with
 an `options` object to specify any of the
 [Leaflet.PolylineMeasure options](https://github.com/ppete2/Leaflet.PolylineMeasure#default-options)
-to be set when the control is created.
+to be set when the control is created, or the [Leaflet Control position] in which to display
+the control.
 For example,
 ```html
 <l-map>
-  <l-polyline-measure :options="{ showUnitControl: true }"/>
+  <l-polyline-measure :options="{ showUnitControl: true }" position="bottomright"/>
   <!-- other map components -->
 </l-map>
 ```
