@@ -5,7 +5,9 @@
   "main": "dist/LControlPolylineMeasure.js",
   "scripts": {
     "build": "vue build src/LControlPolylineMeasure.vue --prod --lib --config build.config.js",
-    "example": "vue build example.vue"
+    "example": "vue build example.vue",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
