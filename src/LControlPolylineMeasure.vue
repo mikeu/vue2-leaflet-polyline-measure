@@ -1,6 +1,7 @@
 <script>
 import { OptionsMixin, ControlMixin, propsBinder, optionsMerger } from 'vue2-leaflet';
 import LPolylineMeasure from 'leaflet.polylinemeasure';
+import 'leaflet.polylinemeasure/Leaflet.PolylineMeasure.css';
 
 export default {
 
