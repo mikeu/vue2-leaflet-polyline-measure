@@ -6,9 +6,12 @@ export default {
 
   name: 'LControlPolylineMeasure',
 
-  mixins: [ ControlMixin, OptionsMixin ],
+  mixins: [
+    ControlMixin,
+    OptionsMixin,
+  ],
 
-  mounted() {
+  mounted () {
     const options = optionsMerger({
       ...this.controlOptions,
       options: this.options,
