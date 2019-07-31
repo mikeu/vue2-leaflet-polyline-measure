@@ -25,7 +25,7 @@ in which to display the control.
 For example,
 ```html
 <l-map>
-  <l-polyline-measure :options="{ showUnitControl: true }" position="bottomright"/>
+  <l-control-polyline-measure :options="{ showUnitControl: true }" position="bottomright"/>
   <!-- other map components -->
 </l-map>
 ```
