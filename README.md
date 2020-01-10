@@ -30,6 +30,34 @@ For example,
 </l-map>
 ```
 
+#### Polyline measurement events
+
+The polyline measurement control fires events from the map to which it has been added. In Vue, these
+can be listened for in the standard fashion, by adding event handlers the the `LMap` control within
+which the `LControlPolylineMeasure` is being used:
+```html
+<l-map
+    @polylinemeasure:toggle="handleToggle"
+    @polylinemeasure:start="handleStart"
+    @polylinemeasure:resume="handleResume"
+    @polylinemeasure:finish="handleFinish"
+    @polylinemeasure:clear="handleClear"
+    @polylinemeasure:add="handleAdd"
+    @polylinemeasure:insert="handleInsert"
+    @polylinemeasure:move="handleMove"
+    @polylinemeasure:remove="handleRemove"
+>
+  <l-control-polyline-measure :options="{ showUnitControl: true }" position="bottomright"/>
+  <!-- other map components -->
+</l-map>
+```
+Of course, the `handleToggle`, `handleStart`, etc., methods must be defined within the Vue component
+that is calling them.
+
+See the [Events](https://github.com/ppete2/Leaflet.PolylineMeasure#events) section of the
+Leaflet.PolylineMeasure documentation for more details about the arguments passed to each event
+handler.
+
 
 ### Loading the Vue component
 
