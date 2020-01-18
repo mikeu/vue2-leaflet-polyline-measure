@@ -10,6 +10,17 @@ on [Leaflet](https://leafletjs.com/) maps in [Vue](https://vuejs.org/) applicati
 npm install --save vue2-leaflet-polyline-measure
 ```
 
+## Local demo
+```bash
+git clone git@github.com:mikeu/vue2-leaflet-polyline-measure.git
+cd vue2-leaflet-polyline-measure
+
+npm install
+npm run example
+```
+You should then be able to visit http://localhost:4000 to see a leaflet map with the polyline
+measurement tool. Events fired by the tool will be logged beneath the map as you interact with it.
+
 
 ## Usage
 

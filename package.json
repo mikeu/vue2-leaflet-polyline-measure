@@ -4,11 +4,7 @@
   "description": "Leaflet.PolylineMeasure control plugin extension for Vue2Leaflet package",
   "main": "./LControlPolylineMeasure.vue",
   "scripts": {
-    "build": "poi --prod src/LControlPolylineMeasure.vue",
-    "build-old": "vue build src/LControlPolylineMeasure.vue --prod --lib --config build.config.js",
-    "example": "poi --serve",
-    "version": "npm run build && git add -A dist",
-    "postversion": "git push --follow-tags"
+    "example": "poi --serve"
   },
   "repository": {
     "type": "git",
