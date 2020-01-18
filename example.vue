@@ -24,7 +24,7 @@
 <script>
 import L from 'leaflet';
 import { LMap, LTileLayer } from 'vue2-leaflet';
-import LControlPolylineMeasure from './src/LControlPolylineMeasure.vue';
+import LControlPolylineMeasure from './LControlPolylineMeasure.vue';
 
 export default {
   components: {
@@ -36,7 +36,7 @@ export default {
     return {
       mapCentre: [51, -114],
       mapZoom: 10,
-      tileUrl: '//{s}.tile.osm.org/{z}/{x}/{y}.png',
+      tileUrl: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       tileAttribution: '&copy; <a href="//osm.org/copyright">OpenStreetMap</a> contributors',
     };
   },

@@ -2,11 +2,11 @@
   "name": "vue2-leaflet-polyline-measure",
   "version": "1.1.1",
   "description": "Leaflet.PolylineMeasure control plugin extension for Vue2Leaflet package",
-  "main": "dist/LControlPolylineMeasure.js",
+  "main": "./LControlPolylineMeasure.vue",
   "scripts": {
     "build": "poi --prod src/LControlPolylineMeasure.vue",
     "build-old": "vue build src/LControlPolylineMeasure.vue --prod --lib --config build.config.js",
-    "example": "vue build example.vue",
+    "example": "poi --serve",
     "version": "npm run build && git add -A dist",
     "postversion": "git push --follow-tags"
   },
@@ -28,21 +28,16 @@
   },
   "homepage": "https://github.com/mikeu/vue2-leaflet-polyline-measure#readme",
   "dependencies": {
-    "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure#b85a4b9"
-  },
-  "peerDependencies": {
-    "leaflet": "^1.3.4"
+    "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure#b85a4b9",
+    "vue2-leaflet": "^2.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "babel-preset-env": "^1.6.0",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.2.2",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.1.2",
     "leaflet": "^1.3.4",
     "poi": "^12.7.5",
     "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11",
-    "vue2-leaflet": "^2.0.0",
-    "webpack-node-externals": "^1.5.4"
+    "vue-template-compiler": "^2.6.11"
   }
 }
