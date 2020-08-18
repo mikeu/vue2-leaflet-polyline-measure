@@ -1,6 +1,6 @@
 {
   "name": "vue2-leaflet-polyline-measure",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Leaflet.PolylineMeasure control plugin extension for Vue2Leaflet package",
   "main": "./LControlPolylineMeasure.vue",
   "scripts": {
