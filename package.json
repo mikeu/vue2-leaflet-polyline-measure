@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/mikeu/vue2-leaflet-polyline-measure#readme",
   "dependencies": {
-    "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure#b85a4b9",
+    "leaflet.polylinemeasure": "github:ppete2/Leaflet.PolylineMeasure#9908e5a",
     "vue2-leaflet": "^2.0.0"
   },
   "devDependencies": {
